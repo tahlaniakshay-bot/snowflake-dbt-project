@@ -1,0 +1,13 @@
+snowflake_dbt_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: <account_id>
+      user: <username>
+      password: <password>
+      role: TRANSFORMER
+      database: ANALYTICS
+      warehouse: COMPUTE_WH
+      schema: DBT_DEV
+      threads: 4

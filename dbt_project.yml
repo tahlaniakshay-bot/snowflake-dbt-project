@@ -1,0 +1,14 @@
+name: snowflake_dbt_project
+version: '1.0'
+config-version: 2
+
+profile: snowflake_dbt_project
+
+models:
+  snowflake_dbt_project:
+    staging:
+      materialized: view
+    intermediate:
+      materialized: table
+    marts:
+      materialized: table
